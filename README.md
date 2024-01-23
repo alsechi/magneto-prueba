@@ -1,4 +1,4 @@
-##Magneto Prueba
+## Magneto Prueba
 ### Introduccion
 
 Una automatizacion simple con la cual crea se hace una compra en la pagina de [Saucedemo](https://www.saucedemo.com)
