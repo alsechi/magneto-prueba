@@ -1,0 +1,102 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Compra Exitosa",
+        "description": "",
+        "id": "escenarios-de-compra-en-la-pagina--https://www.saucedemo.com/;compra-exitosa;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 27604198599,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "ingreso al la pagina  y entro con el usuario",
+            "match": {
+              "location": "CompraDefinitions.ingresoPaginaEntroConUsuario(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "standard_user",
+                  "secret_sauce"
+                ]
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30877970600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Seleciono el Item a comprar",
+            "match": {
+              "location": "CompraDefinitions.selecionoItemComprar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 62984816300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Ingreso al carrito a pagar  y lleno los datos de compra",
+            "match": {
+              "location": "CompraDefinitions.ingresoAlCarritoAPagar()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 231776000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "verifico si se logro la compra \"Thank you for your order!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Thank you for your order!",
+                  "offset": 32
+                }
+              ],
+              "location": "CompraDefinitions.verificoSeLogroCompra(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Compra"
+          },
+          {
+            "name": "@CompraExitosa"
+          }
+        ]
+      }
+    ],
+    "name": "Escenarios de compra en la pagina  https://www.saucedemo.com/",
+    "description": "",
+    "id": "escenarios-de-compra-en-la-pagina--https://www.saucedemo.com/",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/Compra/Compra.feature",
+    "tags": [
+      {
+        "name": "@Compra",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

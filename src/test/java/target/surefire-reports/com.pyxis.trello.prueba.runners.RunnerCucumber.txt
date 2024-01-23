@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.pyxis.trello.prueba.runners.RunnerCucumber
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 111.374 s - in com.pyxis.trello.prueba.runners.RunnerCucumber
